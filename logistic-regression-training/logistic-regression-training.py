@@ -20,9 +20,6 @@ def train_logistic_regression(X, y, lr=0.1, steps=1000):
         w=w-lr*(np.dot(X.T,error))/len(y)
         #∇b=Σ(p−y)/N
         b=b-lr*(np.sum(error))/len(y)
-
-        # w=w-lr*dw
-        # b=b-lr*db
     return w,b
 
 
